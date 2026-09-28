@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de Inglês 7º Ano - Colégio Salesiano</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        salesiano: {
+                            red: '#D32F2F',
+                            redDark: '#B71C1C',
+                            blue: '#1565C0',
+                            blueDark: '#0D47A1',
+                            bgGray: '#F8FAFC',
+                            lightBlue: '#E3F2FD',
+                            lightRed: '#FFEBEE'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F1F5F9;
+            color: #1E293B;
+        }
+        .word-chip {
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        .word-chip:hover {
+            transform: translateY(-2px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94A3B8;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            .print-only { display: block !important; }
+            body { background: white; color: black; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased">
+
+    <!-- HEADER -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <!-- Salesiano Vectorized Logo SVG -->
+                <svg class="h-12 w-auto" viewBox="0 0 260 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Blue Oval Loop -->
+                    <path d="M 130 15 C 200 15, 255 35, 255 60 C 255 85, 190 105, 120 105 C 50 105, 5 85, 5 60 C 5 45, 30 32, 75 24" stroke="#1565C0" stroke-width="8" stroke-linecap="round" fill="none"/>
+                    <!-- Red Stylized 'S' Path -->
+                    <path d="M 140 22 C 175 22, 195 38, 175 52 C 150 68, 80 62, 55 80 C 35 94, 60 106, 100 106 C 70 106, 45 95, 60 82 C 85 62, 155 68, 178 48 C 195 32, 170 22, 140 22 Z" fill="#D32F2F"/>
+                    <!-- SALESIANO Text -->
+                    <text x="130" y="116" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="900" font-size="20" fill="#1565C0" letter-spacing="3">SALESIANO</text>
+                </svg>
+                <div class="border-l border-slate-300 pl-4">
+                    <h1 class="text-lg font-bold text-salesiano-blueDark leading-tight">Colégio Salesiano Aracaju</h1>
+                    <p class="text-xs font-semibold text-salesiano-red uppercase tracking-wider">Língua Inglesa • 7º Ano EF II</p>
+                </div>
+            </div>
+            
+            <div id="header-student-info" class="hidden sm:flex items-center space-x-3 bg-slate-100 px-4 py-2 rounded-full border border-slate-200">
+                <i class="fa-solid fa-user-graduate text-salesiano-blue"></i>
+                <span id="student-name-display" class="font-bold text-slate-700 text-sm">Aluno</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- ========================================== -->
+        <!-- SCREEN 1: THEORETICAL REVIEW (REVISÃO) -->
+        <!-- ========================================== -->
+        <section id="screen-review" class="space-y-8">
+            <!-- Title Banner -->
+            <div class="bg-gradient-to-r from-salesiano-blueDark to-salesiano-blue text-white rounded-2xl p-6 sm:p-8 shadow-md relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-white">
+                    <i class="fa-solid fa-book-open text-9xl"></i>
+                </div>
+                <div class="relative z-10">
+                    <span class="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">Material Didático de Apoio</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">Revisão Gramatical: Simple Past & Past Continuous</h2>
+                    <p class="mt-2 text-blue-100 max-w-3xl text-sm sm:text-base">Guia completo com conceitos, regras, estruturas e exemplos traduzidos para preparar você para a avaliação.</p>
+                </div>
+            </div>
+
+            <!-- Content Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- SIMPLE PAST CARD -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="bg-salesiano-red text-white p-4 font-bold text-lg flex items-center space-x-2">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <span>1. Simple Past (Passado Simples)</span>
+                        </div>
+                        <div class="p-6 space-y-5 text-slate-700">
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider text-salesiano-red">Conceito</h4>
+                                <p class="text-sm mt-1">Usado para ações que **começaram e terminaram** em um momento específico do passado.</p>
+                            </div>
+
+                            <!-- Rules breakdown -->
+                            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-sm space-y-2">
+                                <h5 class="font-bold text-slate-800">Regras de Verbos Regulares (Adiciona-se -ed):</h5>
+                                <ul class="list-disc list-inside space-y-1 text-xs sm:text-sm text-slate-600">
+                                    <li>Regra Geral: <span class="font-mono bg-white px-1.5 py-0.5 rounded border">play &rarr; played</span></li>
+                                    <li>Terminados em <b>-e</b>: adiciona apenas <b>-d</b> (<span class="font-mono bg-white px-1.5 py-0.5 rounded border">dance &rarr; danced</span>)</li>
+                                    <li>Terminados em <b>Consoante + Y</b>: troca Y por <b>-ied</b> (<span class="font-mono bg-white px-1.5 py-0.5 rounded border">study &rarr; studied</span>)</li>
+                                    <li>CVC (Consoante + Vogal + Consoante tônica): dobra a última letra (<span class="font-mono bg-white px-1.5 py-0.5 rounded border">stop &rarr; stopped</span>)</li>
+                                </ul>
+                                <p class="text-xs text-slate-500 pt-1"><i>Obs: Verbos Irregulares possuem formas próprias (ex: go &rarr; went, eat &rarr; ate).</i></p>
+                            </div>
+
+                            <!-- Structures Table -->
+                            <div class="space-y-3">
+                                <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider text-salesiano-red">Estruturas Gramaticais</h4>
+                                <div class="space-y-2 text-xs sm:text-sm">
+                                    <div class="p-3 bg-blue-50 border-l-4 border-salesiano-blue rounded-r-lg">
+                                        <p class="font-bold text-salesiano-blueDark">Afirmativa (+): Sujeito + Verbo no Passado (-ed / Irregular)</p>
+                                        <p class="text-slate-600 mt-1">&bull; I watched a movie yesterday. <span class="text-slate-500">(Eu assisti a um filme ontem.)</span></p>
+                                    </div>
+                                    <div class="p-3 bg-red-50 border-l-4 border-salesiano-red rounded-r-lg">
+                                        <p class="font-bold text-salesiano-redDark">Negativa (-): Sujeito + DID NOT (didn't) + Verbo no Infinitivo (Sem -ed!)</p>
+                                        <p class="text-slate-600 mt-1">&bull; She didn't visit her grandma last week. <span class="text-slate-500">(Ela não visitou a avó dela na semana passada.)</span></p>
+                                    </div>
+                                    <div class="p-3 bg-purple-50 border-l-4 border-purple-600 rounded-r-lg">
+                                        <p class="font-bold text-purple-900">Interrogativa (?): DID + Sujeito + Verbo no Infinitivo?</p>
+                                        <p class="text-slate-600 mt-1">&bull; Did you play soccer yesterday? <span class="text-slate-500">(Você jogou futebol ontem?)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAST CONTINUOUS CARD -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="bg-salesiano-blue text-white p-4 font-bold text-lg flex items-center space-x-2">
+                            <i class="fa-solid fa-spinner"></i>
+                            <span>2. Past Continuous (Passado Contínuo)</span>
+                        </div>
+                        <div class="p-6 space-y-5 text-slate-700">
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider text-salesiano-blue">Conceito</h4>
+                                <p class="text-sm mt-1">Usado para descrever ações que **estavam acontecendo (em andamento)** em um determinado momento do passado.</p>
+                            </div>
+
+                            <!-- Conjugation of WAS / WERE -->
+                            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-sm space-y-2">
+                                <h5 class="font-bold text-slate-800">Conjugação do Verbo To Be no Passado:</h5>
+                                <div class="grid grid-cols-2 gap-2 text-xs sm:text-sm">
+                                    <div class="bg-white p-2 rounded border text-center font-mono"><b>WAS</b>: I, He, She, It</div>
+                                    <div class="bg-white p-2 rounded border text-center font-mono"><b>WERE</b>: You, We, They</div>
+                                </div>
+                            </div>
+
+                            <!-- Structures Table -->
+                            <div class="space-y-3">
+                                <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider text-salesiano-blue">Estruturas Gramaticais</h4>
+                                <div class="space-y-2 text-xs sm:text-sm">
+                                    <div class="p-3 bg-blue-50 border-l-4 border-salesiano-blue rounded-r-lg">
+                                        <p class="font-bold text-salesiano-blueDark">Afirmativa (+): Sujeito + WAS/WERE + Verbo-ING</p>
+                                        <p class="text-slate-600 mt-1">&bull; They were studying English at 8 PM. <span class="text-slate-500">(Eles estavam estudando inglês às 20h.)</span></p>
+                                    </div>
+                                    <div class="p-3 bg-red-50 border-l-4 border-salesiano-red rounded-r-lg">
+                                        <p class="font-bold text-salesiano-redDark">Negativa (-): Sujeito + WAS NOT (wasn't) / WERE NOT (weren't) + Verbo-ING</p>
+                                        <p class="text-slate-600 mt-1">&bull; He wasn't sleeping when I called. <span class="text-slate-500">(Ele não estava dormindo quando eu liguei.)</span></p>
+                                    </div>
+                                    <div class="p-3 bg-purple-50 border-l-4 border-purple-600 rounded-r-lg">
+                                        <p class="font-bold text-purple-900">Interrogativa (?): WAS / WERE + Sujeito + Verbo-ING?</p>
+                                        <p class="text-slate-600 mt-1">&bull; Were you reading a book? <span class="text-slate-500">(Você estava lendo um livro?)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COMBINED USAGE CARD (WHEN vs WHILE) -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-4">
+                <div class="flex items-center space-x-3 text-salesiano-blueDark font-bold text-lg">
+                    <i class="fa-solid fa-code-merge text-salesiano-red text-xl"></i>
+                    <h3>3. Uso Combinado: When (Quando) vs. While (Enquanto)</h3>
+                </div>
+                <p class="text-sm text-slate-600">Frequentemente combinamos o <b>Past Continuous</b> (ação em andamento) com o <b>Simple Past</b> (ação pontual que interrompe).</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                        <span class="font-bold text-amber-900 block mb-1">WHEN + Simple Past</span>
+                        <p class="text-slate-700">&bull; I was cooking <b>when</b> the phone rang. <br><span class="text-xs text-slate-500">(Eu estava cozinhando quando o telefone tocou.)</span></p>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-xl border border-indigo-200">
+                        <span class="font-bold text-indigo-900 block mb-1">WHILE + Past Continuous</span>
+                        <p class="text-slate-700">&bull; <b>While</b> I was studying, my brother was playing video games. <br><span class="text-xs text-slate-500">(Enquanto eu estava estudando, meu irmão estava jogando videogame.)</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Button -->
+            <div class="flex justify-center pt-4">
+                <button onclick="goToScreen('screen-name')" class="bg-salesiano-red hover:bg-salesiano-redDark text-white font-extrabold text-lg px-10 py-4 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 flex items-center space-x-3">
+                    <span>Start Quiz!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SCREEN 2: STUDENT IDENTIFICATION -->
+        <!-- ========================================== -->
+        <section id="screen-name" class="hidden max-w-xl mx-auto py-12">
+            <div class="bg-white rounded-3xl shadow-xl border border-slate-200 p-8 sm:p-10 text-center space-y-6">
+                <div class="w-20 h-20 bg-blue-50 text-salesiano-blue rounded-full flex items-center justify-center mx-auto text-3xl shadow-inner">
+                    <i class="fa-solid fa-user-pen"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-800">Identificação do Aluno</h2>
+                    <p class="text-slate-500 text-sm mt-1">Por favor, digite seu nome completo para iniciar o simulado do 7º Ano.</p>
+                </div>
+                
+                <form onsubmit="handleStartQuiz(event)" class="space-y-4">
+                    <div class="text-left">
+                        <label for="student-name-input" class="block text-xs font-bold uppercase text-slate-500 mb-1">Nome Completo</label>
+                        <input type="text" id="student-name-input" required placeholder="Ex: Maria Silva Santos" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-salesiano-blue focus:border-salesiano-blue text-slate-800 text-base font-medium transition">
+                        <p id="name-error" class="text-xs text-salesiano-red font-semibold mt-1 hidden">Por favor, preencha o seu nome completo antes de avançar.</p>
+                    </div>
+
+                    <div class="pt-4 flex space-x-3">
+                        <button type="button" onclick="goToScreen('screen-review')" class="w-1/3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3 rounded-xl transition text-sm">
+                            Voltar
+                        </button>
+                        <button type="submit" class="w-2/3 bg-salesiano-blue hover:bg-salesiano-blueDark text-white font-bold py-3 rounded-xl shadow-md transition text-sm flex items-center justify-center space-x-2">
+                            <span>Iniciar Avaliação</span>
+                            <i class="fa-solid fa-play text-xs"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SCREEN 3: QUIZ INTERFACE (40 QUESTIONS) -->
+        <!-- ========================================== -->
+        <section id="screen-quiz" class="hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- SIDEBAR MENU (QUESTION NAVIGATOR) -->
+                <aside class="lg:col-span-4 xl:col-span-3 order-2 lg:order-1">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sticky top-28 space-y-5">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                            <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-list-check text-salesiano-blue"></i>
+                                <span>Navegador (40 Qs)</span>
+                            </h3>
+                            <span id="answered-counter" class="text-xs font-bold bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full">0/40</span>
+                        </div>
+
+                        <!-- Grid of 40 buttons -->
+                        <div id="questions-nav-grid" class="grid grid-cols-5 gap-2 max-h-80 overflow-y-auto custom-scrollbar p-1">
+                            <!-- JS will dynamically populate 40 buttons here -->
+                        </div>
+
+                        <!-- Legend -->
+                        <div class="pt-2 border-t border-slate-100 grid grid-cols-2 gap-2 text-[11px] text-slate-500 font-medium">
+                            <div class="flex items-center space-x-1.5"><span class="w-3 h-3 rounded-full bg-slate-200 border border-slate-300"></span><span>Pendente</span></div>
+                            <div class="flex items-center space-x-1.5"><span class="w-3 h-3 rounded-full bg-emerald-500"></span><span>Correto</span></div>
+                            <div class="flex items-center space-x-1.5"><span class="w-3 h-3 rounded-full bg-salesiano-red"></span><span>Incorreto</span></div>
+                            <div class="flex items-center space-x-1.5"><span class="w-3 h-3 rounded-full bg-amber-400"></span><span>Atual</span></div>
+                        </div>
+
+                        <button onclick="confirmFinishQuiz()" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 rounded-xl shadow transition text-sm flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Finalizar e Ver Relatório</span>
+                        </button>
+                    </div>
+                </aside>
+
+                <!-- QUESTION CARD CONTAINER -->
+                <main class="lg:col-span-8 xl:col-span-9 order-1 lg:order-2 space-y-6">
+                    
+                    <!-- Progress bar -->
+                    <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col space-y-2">
+                        <div class="flex justify-between items-center text-xs font-bold text-slate-600">
+                            <span id="question-category-badge" class="uppercase tracking-wider px-2.5 py-1 rounded-md bg-blue-50 text-salesiano-blue border border-blue-200">
+                                Bloco 1: Afirmativas
+                            </span>
+                            <span id="question-number-text" class="text-slate-800 font-extrabold text-sm">Questão 1 de 40</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                            <div id="quiz-progress-bar" class="bg-salesiano-blue h-full transition-all duration-300 w-0"></div>
+                        </div>
+                    </div>
+
+                    <!-- Main Question Display Box -->
+                    <div id="question-box-container" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 space-y-6">
+                        <!-- Dynamic Question HTML injected by JS -->
+                    </div>
+
+                    <!-- Navigation Footer Controls -->
+                    <div class="flex justify-between items-center">
+                        <button id="btn-prev-q" onclick="navigateQuestion(-1)" class="bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold px-5 py-3 rounded-xl transition text-sm flex items-center space-x-2">
+                            <i class="fa-solid fa-chevron-left text-xs"></i>
+                            <span>Anterior</span>
+                        </button>
+
+                        <button id="btn-next-q" onclick="navigateQuestion(1)" class="bg-salesiano-blue hover:bg-salesiano-blueDark text-white font-bold px-6 py-3 rounded-xl shadow transition text-sm flex items-center space-x-2">
+                            <span>Próxima</span>
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+
+                </main>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SCREEN 4: PERFORMANCE REPORT (RELATÓRIO) -->
+        <!-- ========================================== -->
+        <section id="screen-report" class="hidden space-y-8">
+            
+            <!-- Top Congratulations Banner -->
+            <div class="bg-white rounded-3xl shadow-md border border-slate-200 p-8 text-center space-y-4">
+                <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-4xl shadow-inner">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Relatório de Desempenho</span>
+                    <h2 id="report-student-name" class="text-3xl font-extrabold text-slate-800 mt-1">Parabéns, Aluno!</h2>
+                    <p class="text-slate-500 text-sm">Você concluiu a revisão interativa de Simple Past e Past Continuous.</p>
+                </div>
+
+                <!-- Main Score Badge -->
+                <div class="inline-flex items-center space-x-6 bg-slate-50 border border-slate-200 px-8 py-4 rounded-2xl">
+                    <div class="text-left">
+                        <p class="text-xs font-bold uppercase text-slate-400">Pontuação Total</p>
+                        <p class="text-3xl font-black text-salesiano-blue" id="report-score-text">0 / 40</p>
+                    </div>
+                    <div class="h-10 w-px bg-slate-200"></div>
+                    <div class="text-left">
+                        <p class="text-xs font-bold uppercase text-slate-400">Aproveitamento</p>
+                        <p class="text-3xl font-black text-emerald-600" id="report-percentage-text">0%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakdown Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Category 1 -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 space-y-3">
+                    <div class="flex items-center justify-between text-slate-800 font-bold">
+                        <span class="text-sm">Frases Afirmativas</span>
+                        <span id="score-aff-text" class="text-xs font-bold px-2 py-1 rounded bg-slate-100">0/10</span>
+                    </div>
+                    <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                        <div id="bar-aff" class="bg-blue-600 h-full w-0 transition-all duration-500"></div>
+                    </div>
+                </div>
+                <!-- Category 2 -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 space-y-3">
+                    <div class="flex items-center justify-between text-slate-800 font-bold">
+                        <span class="text-sm">Frases Negativas</span>
+                        <span id="score-neg-text" class="text-xs font-bold px-2 py-1 rounded bg-slate-100">0/15</span>
+                    </div>
+                    <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                        <div id="bar-neg" class="bg-red-600 h-full w-0 transition-all duration-500"></div>
+                    </div>
+                </div>
+                <!-- Category 3 -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 space-y-3">
+                    <div class="flex items-center justify-between text-slate-800 font-bold">
+                        <span class="text-sm">Frases Interrogativas</span>
+                        <span id="score-int-text" class="text-xs font-bold px-2 py-1 rounded bg-slate-100">0/15</span>
+                    </div>
+                    <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                        <div id="bar-int" class="bg-purple-600 h-full w-0 transition-all duration-500"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pedagogical Diagnosis Card -->
+            <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm">
+                <div class="flex items-center space-x-3 text-salesiano-red font-bold text-lg border-b border-slate-100 pb-3">
+                    <i class="fa-solid fa-stethoscope text-xl"></i>
+                    <h3>Diagnóstico Pedagógico Personalizado</h3>
+                </div>
+                <p class="text-xs text-slate-500">Com base nas questões respondidas, aqui estão as recomendações de estudo para você aperfeiçoar seu inglês:</p>
+
+                <div id="pedagogical-feedback-list" class="space-y-3 pt-2">
+                    <!-- Dynamic feedback items injected here -->
+                </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 no-print pt-4">
+                <button onclick="window.print()" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-6 py-3 rounded-xl transition text-sm flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Imprimir / Salvar PDF</span>
+                </button>
+                <button onclick="restartQuiz()" class="w-full sm:w-auto bg-salesiano-blue hover:bg-salesiano-blueDark text-white font-bold px-8 py-3 rounded-xl shadow-md transition text-sm flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <span>Refazer Avaliação</span>
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500 no-print mt-12">
+        <p>&copy; Colégio Salesiano Aracaju - SE. Material Didático do 7º Ano do Ensino Fundamental II.</p>
+    </footer>
+
+    <script>
+        /* ==========================================================================
+           1. DATASET OF 40 QUESTIONS (A1 CEFR LEVEL FOR 7TH GRADE)
+           - Block 1: Affirmative (10 Qs: Q1-4 Multiple Choice, Q5-10 Unscramble)
+           - Block 2: Negative (15 Qs: Q11-16 Multiple Choice, Q17-25 Unscramble)
+           - Block 3: Interrogative (15 Qs: Q26-31 Multiple Choice, Q32-40 Unscramble)
+           ========================================================================== */
+
+        const rawQuestions = [
+            // ----------------------------------------------------
+            // BLOCO 1: AFIRMATIVAS (10 QUESTÕES)
+            // ----------------------------------------------------
+            {
+                id: 1,
+                block: 'aff',
+                type: 'mc',
+                topic: 'Simple Past (Regular Verb)',
+                question: 'Complete the sentence in the Simple Past: "Yesterday, Lucas ________ soccer in the park with his friends."',
+                correct: 'played',
+                distractors: ['play', 'playing', 'plays', 'was played'],
+                explanation: 'Em frases afirmativas do Simple Past com verbos regulares que terminam em VOGAL + Y (play), adiciona-se apenas "-ed" no final (played).'
+            },
+            {
+                id: 2,
+                block: 'aff',
+                type: 'mc',
+                topic: 'Simple Past (Irregular Verb)',
+                question: 'Complete the sentence in the Simple Past: "My family ________ a delicious pizza last night."',
+                correct: 'ate',
+                distractors: ['eat', 'eated', 'eating', 'eats'],
+                explanation: 'O verbo "eat" é irregular. A forma correta no Simple Past é "ate" (não existe "eated").'
+            },
+            {
+                id: 3,
+                block: 'aff',
+                type: 'mc',
+                topic: 'Past Continuous (Singular)',
+                question: 'Complete the sentence in the Past Continuous: "At 8 PM, Mariana ________ her English homework."',
+                correct: 'was doing',
+                distractors: ['were doing', 'is doing', 'did', 'was do'],
+                explanation: 'Para o sujeito "Mariana" (She), usamos o verbo auxiliar "was" + o verbo principal com o sufixo "-ing" (was doing).'
+            },
+            {
+                id: 4,
+                block: 'aff',
+                type: 'mc',
+                topic: 'Past Continuous (Plural)',
+                question: 'Complete the sentence in the Past Continuous: "The students ________ TV when the teacher arrived."',
+                correct: 'were watching',
+                distractors: ['was watching', 'watched', 'are watching', 'were watch'],
+                explanation: 'Para sujeitos no plural ("The students" = They), o auxiliar do Past Continuous deve ser "were" + verbo-ing (were watching).'
+            },
+            {
+                id: 5,
+                block: 'aff',
+                type: 'unscramble',
+                topic: 'Simple Past Structure',
+                words: ['I', 'watched', 'a', 'great', 'movie', 'yesterday'],
+                targetSentence: 'I watched a great movie yesterday',
+                explanation: 'A ordem afirmativa padrão no Simple Past é: Sujeito (I) + Verbo no passado (watched) + Complemento (a great movie) + Advérbio de tempo (yesterday).'
+            },
+            {
+                id: 6,
+                block: 'aff',
+                type: 'unscramble',
+                topic: 'Simple Past (Irregular)',
+                words: ['We', 'went', 'to', 'the', 'beach', 'last', 'weekend'],
+                targetSentence: 'We went to the beach last weekend',
+                explanation: 'Estrutura afirmativa: Sujeito (We) + Verbo irregular no passado (went) + Local (to the beach) + Tempo (last weekend).'
+            },
+            {
+                id: 7,
+                block: 'aff',
+                type: 'unscramble',
+                topic: 'Past Continuous Structure',
+                words: ['She', 'was', 'reading', 'a', 'book', 'in', 'her', 'room'],
+                targetSentence: 'She was reading a book in her room',
+                explanation: 'Past Continuous Afirmativo: Sujeito (She) + WAS + Verbo com -ING (reading) + Complemento (a book in her room).'
+            },
+            {
+                id: 8,
+                block: 'aff',
+                type: 'unscramble',
+                topic: 'Past Continuous Structure',
+                words: ['They', 'were', 'playing', 'video', 'games', 'all', 'afternoon'],
+                targetSentence: 'They were playing video games all afternoon',
+                explanation: 'Past Continuous com plural: Sujeito (They) + WERE + Verbo com -ING (playing) + Objeto (video games) + Expressão temporal (all afternoon).'
+            },
+            {
+                id: 9,
+                block: 'aff',
+                type: 'unscramble',
+                topic: 'Combined Sentence (While)',
+                words: ['While', 'it', 'was', 'raining', 'we', 'stayed', 'home'],
+                targetSentence: 'While it was raining we stayed home',
+                explanation: 'Uso de "While": A oração com While costuma usar o Past Continuous (it was raining) indicando duração, acompanhada pelo Simple Past (we stayed home).'
+            },
+            {
+                id: 10,
+                block: 'aff',
+                type: 'unscramble',
+                topic: 'Simple Past (Regular CVC)',
+                words: ['Gabriel', 'stopped', 'the', 'bus', 'at', 'the', 'corner'],
+                targetSentence: 'Gabriel stopped the bus at the corner',
+                explanation: 'Verbos CVC como "stop" dobram a última consoante no passado (stopped). Ordem: Sujeito + Verbo + Objeto + Local.'
+            },
+
+            // ----------------------------------------------------
+            // BLOCO 2: NEGATIVAS (15 QUESTÕES)
+            // ----------------------------------------------------
+            {
+                id: 11,
+                block: 'neg',
+                type: 'mc',
+                topic: 'Simple Past Negative',
+                question: 'Choose the correct negative form: "Pedro ________ to school yesterday because he was sick."',
+                correct: "didn't go",
+                distractors: ["didn't went", "wasn't go", "don't go", "not went"],
+                explanation: 'Em frases negativas no Simple Past, usamos o auxiliar "didn\'t" (did not) + o verbo na forma BASE/infinitivo sem "to" (go).'
+            },
+            {
+                id: 12,
+                block: 'neg',
+                type: 'mc',
+                topic: 'Simple Past Negative',
+                question: 'Identify the correct sentence: "They ________ video games yesterday."',
+                correct: "didn't play",
+                distractors: ["didn't played", "weren't play", "not played", "don't played"],
+                explanation: 'Cuidado! Após o auxiliar "didn\'t", NUNCA usamos o verbo no passado com "-ed". A forma correta é "didn\'t play".'
+            },
+            {
+                id: 13,
+                block: 'neg',
+                type: 'mc',
+                topic: 'Past Continuous Negative (Singular)',
+                question: 'Complete with the negative Past Continuous: "Julia ________ listening to music at 10 o\'clock."',
+                correct: "wasn't",
+                distractors: ["weren't", "didn't", "isn't", "not was"],
+                explanation: 'A negativa do Past Continuous para "Julia" (She) é "was not" ou na forma contraída "wasn\'t".'
+            },
+            {
+                id: 14,
+                block: 'neg',
+                type: 'mc',
+                topic: 'Past Continuous Negative (Plural)',
+                question: 'Complete: "The boys ________ playing basketball when it started to rain."',
+                correct: "weren't",
+                distractors: ["wasn't", "didn't", "aren't", "not were"],
+                explanation: 'Para o plural ("The boys" = They), a forma negativa do Past Continuous é "weren\'t" (were not).'
+            },
+            {
+                id: 15,
+                block: 'neg',
+                type: 'mc',
+                topic: 'Simple Past Negative (Verb To Be)',
+                question: 'Complete: "I ________ at the party last night because I was sleeping."',
+                correct: "wasn't",
+                distractors: ["didn't be", "weren't", "don't was", "not was"],
+                explanation: 'O verbo To Be NÃO usa o auxiliar "didn\'t". No passado negativo, usa-se "wasn\'t" (I / He / She / It) ou "weren\'t" (You / We / They).'
+            },
+            {
+                id: 16,
+                block: 'neg',
+                type: 'mc',
+                topic: 'Simple Past Negative',
+                question: 'Select the sentence with correct grammar:',
+                correct: "We didn't see our teacher at the supermarket.",
+                distractors: [
+                    "We didn't saw our teacher at the supermarket.",
+                    "We wasn't see our teacher at the supermarket.",
+                    "We not see our teacher at the supermarket.",
+                    "We didn't seeing our teacher at the supermarket."
+                ],
+                explanation: 'A regra fundamental da negativa do Simple Past é: Sujeito + didn\'t + verbo no infinitivo (see).'
+            },
+            {
+                id: 17,
+                block: 'neg',
+                type: 'unscramble',
+                topic: 'Simple Past Negative',
+                words: ['I', 'did', 'not', 'like', 'the', 'soup'],
+                targetSentence: 'I did not like the soup',
+                explanation: 'Estrutura Negativa: Sujeito (I) + did not + Verbo no infinitivo (like) + Objeto (the soup).'
+            },
+            {
+                id: 18,
+                block: 'neg',
+                type: 'unscramble',
+                topic: 'Simple Past Negative (Contracted)',
+                words: ['He', "didn't", 'buy', 'the', 'new', 'phone'],
+                targetSentence: "He didn't buy the new phone",
+                explanation: 'Estrutura Negativa Contraída: Sujeito (He) + didn\'t + Verbo na forma base (buy) + Objeto (the new phone).'
+            },
+            {
+                id: 19,
+                block: 'neg',
+                type: 'unscramble',
+                topic: 'Past Continuous Negative',
+                words: ['She', 'was', 'not', 'sleeping', 'at', 'midnight'],
+                targetSentence: 'She was not sleeping at midnight',
+                explanation: 'Past Continuous Negativo: Sujeito (She) + was + not + Verbo-ING (sleeping) + Expressão temporal (at midnight).'
+            },
+            {
+                id: 20,
+                block: 'neg',
+                type: 'unscramble',
+                topic: 'Past Continuous Negative',
+                words: ['We', "weren't", 'studying', 'Math', 'yesterday', 'morning'],
+                targetSentence: "We weren't studying Math yesterday morning",
+                explanation: 'Past Continuous Negativo no Plural: Sujeito (We) + weren\'t + Verbo-ING (studying) + Objeto + Tempo.'
+            },
+            {
+                id: 21,
+                block: 'neg',
+                type: 'unscramble',
+                topic: 'Simple Past Negative',
+                words: ['They', "didn't", 'clean', 'their', 'rooms'],
+                targetSentence: "They didn't clean their rooms",
+                explanation: 'Negativa do Simple Past: Sujeito (They) + didn\'t + Verbo infinitivo (clean) + Objeto (their rooms).'
+            },
+            {
+                id: 22,
+                block: 'neg',
+                type: 'unscramble',
+                topic: 'Past Continuous Negative',
+                words: ['The', 'dog', "wasn't", 'barking', 'at', 'the', 'cat'],
+                targetSentence: "The dog wasn't barking at the cat",
+                explanation: 'Sujeito singular ("The dog" = It) utiliza "wasn\'t" seguido do verbo com o sufixo -ING (barking).'
+            },
+            {
+                id: 23,
+                block: 'neg',
+                type: 'unscramble',
+                topic: 'Simple Past Negative',
+                words: ['You', "didn't", 'call', 'me', 'last', 'night'],
+                targetSentence: "You didn't call me last night",
+                explanation: 'Sujeito (You) + didn\'t + Verbo principal no infinitivo sem to (call) + Objeto (me) + Expressão de tempo (last night).'
+            },
+            {
+                id: 24,
+                block: 'neg',
+                type: 'unscramble',
+                topic: 'Past Continuous Negative',
+                words: ['The', 'students', "weren't", 'paying', 'attention'],
+                targetSentence: "The students weren't paying attention",
+                explanation: 'Sujeito no plural ("The students") exige o auxiliar negativo "weren\'t" + verbo com -ING (paying).'
+            },
+            {
+                id: 25,
+                block: 'neg',
+                type: 'unscramble',
+                topic: 'Simple Past Negative',
+                words: ['Carlos', "didn't", 'eat', 'his', 'breakfast'],
+                targetSentence: "Carlos didn't eat his breakfast",
+                explanation: 'Sujeito (Carlos) + didn\'t + Verbo no infinitivo (eat) + Complemento (his breakfast).'
+            },
+
+            // ----------------------------------------------------
+            // BLOCO 3: INTERROGATIVAS (15 QUESTÕES)
+            // ----------------------------------------------------
+            {
+                id: 26,
+                block: 'int',
+                type: 'mc',
+                topic: 'Simple Past Question',
+                question: 'Choose the correct question in the Simple Past: "________ you study for the English test?"',
+                correct: 'Did',
+                distractors: ['Do', 'Were', 'Was', 'Does'],
+                explanation: 'Perguntas no Simple Past começam com o verbo auxiliar "Did" para qualquer pronome/sujeito.'
+            },
+            {
+                id: 27,
+                block: 'int',
+                type: 'mc',
+                topic: 'Simple Past Question Structure',
+                question: 'Which question is grammatically CORRECT?',
+                correct: 'Did she finish her homework on time?',
+                distractors: [
+                    'Did she finished her homework on time?',
+                    'Was she finish her homework on time?',
+                    'Finished she her homework on time?',
+                    'Does she finished her homework on time?'
+                ],
+                explanation: 'Em perguntas com "Did", o verbo principal NUNCA fica no passado (finish, e não finished).'
+            },
+            {
+                id: 28,
+                block: 'int',
+                type: 'mc',
+                topic: 'Past Continuous Question (Singular)',
+                question: 'Complete: "________ Felipe cooking dinner when you arrived?"',
+                correct: 'Was',
+                distractors: ['Were', 'Did', 'Is', 'Does'],
+                explanation: 'Para sujeitos no singular (Felipe = He), a pergunta no Past Continuous começa com "Was" + sujeito + verbo-ing.'
+            },
+            {
+                id: 29,
+                block: 'int',
+                type: 'mc',
+                topic: 'Past Continuous Question (Plural)',
+                question: 'Complete: "________ the children playing in the garden?"',
+                correct: 'Were',
+                distractors: ['Was', 'Did', 'Are', 'Do'],
+                explanation: 'Para sujeitos no plural ("the children" = They), inicia-se a pergunta com "Were" no Past Continuous.'
+            },
+            {
+                id: 30,
+                block: 'int',
+                type: 'mc',
+                topic: 'Question Words (Simple Past)',
+                question: 'Complete: "Where ________ you go on your last vacation?"',
+                correct: 'did',
+                distractors: ['were', 'was', 'do', 'have'],
+                explanation: 'Perguntas com palavras interrogativas (Where, What, When) no Simple Past seguem a ordem: Wh-word + DID + Sujeito + Verbo.'
+            },
+            {
+                id: 31,
+                block: 'int',
+                type: 'mc',
+                topic: 'Simple Past vs Past Continuous Question',
+                question: 'Choose the correct option: "What ________ you doing at 3 PM yesterday?"',
+                correct: 'were',
+                distractors: ['did', 'was', 'are', 'do'],
+                explanation: 'A pergunta se refere a uma ação em andamento em um horário específico ("at 3 PM"), exigindo Past Continuous: What WERE you DOING?'
+            },
+            {
+                id: 32,
+                block: 'int',
+                type: 'unscramble',
+                topic: 'Simple Past Question',
+                words: ['Did', 'you', 'watch', 'the', 'game', 'yesterday'],
+                targetSentence: 'Did you watch the game yesterday',
+                explanation: 'Estrutura de Pergunta no Simple Past: DID + Sujeito (you) + Verbo base (watch) + Objeto (the game) + Tempo (yesterday).'
+            },
+            {
+                id: 33,
+                block: 'int',
+                type: 'unscramble',
+                topic: 'Simple Past Question',
+                words: ['Did', 'she', 'clean', 'her', 'bedroom'],
+                targetSentence: 'Did she clean her bedroom',
+                explanation: 'Ordem interrogativa do Simple Past: DID + Sujeito (she) + Verbo no infinitivo (clean) + Objeto (her bedroom).'
+            },
+            {
+                id: 34,
+                block: 'int',
+                type: 'unscramble',
+                topic: 'Past Continuous Question',
+                words: ['Was', 'he', 'sleeping', 'when', 'you', 'called'],
+                targetSentence: 'Was he sleeping when you called',
+                explanation: 'Pergunta no Past Continuous: WAS + Sujeito (he) + Verbo-ING (sleeping) + oração no Simple Past (when you called).'
+            },
+            {
+                id: 35,
+                block: 'int',
+                type: 'unscramble',
+                topic: 'Past Continuous Question',
+                words: ['Were', 'they', 'listening', 'to', 'the', 'teacher'],
+                targetSentence: 'Were they listening to the teacher',
+                explanation: 'Interrogativa no Past Continuous: WERE + Sujeito plural (they) + Verbo-ING (listening) + Complemento.'
+            },
+            {
+                id: 36,
+                block: 'int',
+                type: 'unscramble',
+                topic: 'Wh- Question Simple Past',
+                words: ['What', 'did', 'you', 'eat', 'for', 'lunch'],
+                targetSentence: 'What did you eat for lunch',
+                explanation: 'Estrutura com Question Word: Wh-Word (What) + DID + Sujeito (you) + Verbo base (eat) + Complemento (for lunch).'
+            },
+            {
+                id: 37,
+                block: 'int',
+                type: 'unscramble',
+                topic: 'Simple Past Question',
+                words: ['Did', 'they', 'arrive', 'on', 'time'],
+                targetSentence: 'Did they arrive on time',
+                explanation: 'Pergunta direta no Simple Past: DID + Sujeito (they) + Verbo principal no infinitivo (arrive) + Complemento (on time).'
+            },
+            {
+                id: 38,
+                block: 'int',
+                type: 'unscramble',
+                topic: 'Past Continuous Question',
+                words: ['Were', 'you', 'doing', 'your', 'homework'],
+                targetSentence: 'Were you doing your homework',
+                explanation: 'Estrutura Interrogativa do Past Continuous: WERE + Sujeito (you) + Verbo com sufixo -ING (doing) + Objeto.'
+            },
+            {
+                id: 39,
+                block: 'int',
+                type: 'unscramble',
+                topic: 'Wh- Question Past Continuous',
+                words: ['Where', 'was', 'she', 'going', 'last', 'night'],
+                targetSentence: 'Where was she going last night',
+                explanation: 'Pergunta Wh- no Past Continuous: Where + WAS + Sujeito (she) + Verbo-ING (going) + Tempo (last night).'
+            },
+            {
+                id: 40,
+                block: 'int',
+                type: 'unscramble',
+                topic: 'Simple Past Question',
+                words: ['Did', 'Gabriel', 'find', 'his', 'keys'],
+                targetSentence: 'Did Gabriel find his keys',
+                explanation: 'Pergunta no Simple Past: DID + Nome/Sujeito (Gabriel) + Verbo no infinitivo (find) + Complemento (his keys).'
+            }
+        ];
+
+        /* ==========================================================================
+           2. APP STATE MANAGEMENT
+           ========================================================================== */
+        let studentName = "";
+        let currentQuestionIndex = 0;
+        let processedQuestions = []; // Prepared questions with randomized options for MC
+        let userAnswers = {}; // Map of question ID -> { selected, isCorrect, checked }
+        let unscrambleSelectedWords = {}; // Map of question ID -> Array of selected word strings
+
+        /* ==========================================================================
+           3. INITIALIZATION & ROUTING
+           ========================================================================== */
+        window.onload = function() {
+            initQuestions();
+            renderQuestionNavGrid();
+        };
+
+        function goToScreen(screenId) {
+            document.getElementById('screen-review').classList.add('hidden');
+            document.getElementById('screen-name').classList.add('hidden');
+            document.getElementById('screen-quiz').classList.add('hidden');
+            document.getElementById('screen-report').classList.add('hidden');
+
+            document.getElementById(screenId).classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function handleStartQuiz(event) {
+            event.preventDefault();
+            const nameInput = document.getElementById('student-name-input').value.trim();
+            if (!nameInput) {
+                document.getElementById('name-error').classList.remove('hidden');
+                return;
+            }
+            document.getElementById('name-error').classList.add('hidden');
+            studentName = nameInput;
+            document.getElementById('student-name-display').innerText = studentName;
+            document.getElementById('header-student-info').classList.remove('hidden');
+
+            goToScreen('screen-quiz');
+            loadQuestion(0);
+        }
+
+        /* ==========================================================================
+           4. QUESTION PROCESSING (RANDOMIZATION)
+           ========================================================================== */
+        function initQuestions() {
+            processedQuestions = rawQuestions.map(q => {
+                if (q.type === 'mc') {
+                    // Combine correct answer and distractors
+                    const optionsList = [q.correct, ...q.distractors];
+                    // Shuffle options array randomly so correct option position varies
+                    const shuffledOptions = shuffleArray([...optionsList]);
+                    return {
+                        ...q,
+                        options: shuffledOptions
+                    };
+                } else if (q.type === 'unscramble') {
+                    // Shuffle words for unscramble
+                    const shuffledWords = shuffleArray([...q.words]);
+                    return {
+                        ...q,
+                        shuffledWords: shuffledWords
+                    };
+                }
+                return q;
+            });
+        }
+
+        // Fisher-Yates Shuffle algorithm
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        /* ==========================================================================
+           5. RENDER QUESTION & NAV GRID
+           ========================================================================== */
+        function renderQuestionNavGrid() {
+            const gridContainer = document.getElementById('questions-nav-grid');
+            gridContainer.innerHTML = '';
+
+            processedQuestions.forEach((q, idx) => {
+                const btn = document.createElement('button');
+                btn.id = `nav-btn-${idx}`;
+                btn.innerText = idx + 1;
+                btn.className = `h-9 w-full rounded-lg text-xs font-bold transition flex items-center justify-center border `;
+
+                // Determine styling based on state
+                const userState = userAnswers[q.id];
+                if (idx === currentQuestionIndex) {
+                    btn.classList.add('ring-2', 'ring-amber-400', 'ring-offset-1');
+                }
+
+                if (userState && userState.checked) {
+                    if (userState.isCorrect) {
+                        btn.classList.add('bg-emerald-500', 'text-white', 'border-emerald-600');
+                    } else {
+                        btn.classList.add('bg-salesiano-red', 'text-white', 'border-salesiano-redDark');
+                    }
+                } else {
+                    btn.classList.add('bg-slate-100', 'hover:bg-slate-200', 'text-slate-700', 'border-slate-300');
+                }
+
+                btn.onclick = () => loadQuestion(idx);
+                gridContainer.appendChild(btn);
+            });
+
+            // Update answered counter
+            const answeredCount = Object.keys(userAnswers).filter(id => userAnswers[id].checked).length;
+            document.getElementById('answered-counter').innerText = `${answeredCount}/40`;
+        }
+
+        function loadQuestion(index) {
+            if (index < 0 || index >= processedQuestions.length) return;
+            currentQuestionIndex = index;
+            const q = processedQuestions[index];
+
+            // Update navigation highlights
+            renderQuestionNavGrid();
+
+            // Progress bar & headers
+            const progressPct = ((index + 1) / processedQuestions.length) * 100;
+            document.getElementById('quiz-progress-bar').style.width = `${progressPct}%`;
+            document.getElementById('question-number-text').innerText = `Questão ${index + 1} de 40`;
+
+            const catBadge = document.getElementById('question-category-badge');
+            if (q.block === 'aff') {
+                catBadge.innerText = 'Bloco 1: Afirmativas';
+                catBadge.className = 'uppercase tracking-wider px-2.5 py-1 rounded-md bg-blue-50 text-salesiano-blue border border-blue-200 text-xs font-bold';
+            } else if (q.block === 'neg') {
+                catBadge.innerText = 'Bloco 2: Negativas';
+                catBadge.className = 'uppercase tracking-wider px-2.5 py-1 rounded-md bg-red-50 text-salesiano-red border border-red-200 text-xs font-bold';
+            } else {
+                catBadge.innerText = 'Bloco 3: Interrogativas';
+                catBadge.className = 'uppercase tracking-wider px-2.5 py-1 rounded-md bg-purple-50 text-purple-700 border border-purple-200 text-xs font-bold';
+            }
+
+            // Prev / Next button states
+            document.getElementById('btn-prev-q').disabled = (index === 0);
+            document.getElementById('btn-prev-q').style.opacity = (index === 0) ? '0.5' : '1';
+
+            if (index === processedQuestions.length - 1) {
+                document.getElementById('btn-next-q').innerHTML = `<span>Ver Relatório</span> <i class="fa-solid fa-flag-checkered text-xs"></i>`;
+            } else {
+                document.getElementById('btn-next-q').innerHTML = `<span>Próxima</span> <i class="fa-solid fa-chevron-right text-xs"></i>`;
+            }
+
+            // Render container content
+            const container = document.getElementById('question-box-container');
+            container.innerHTML = '';
+
+            const userState = userAnswers[q.id] || { checked: false, selected: null, isCorrect: false };
+
+            if (q.type === 'mc') {
+                renderMultipleChoiceQuestion(container, q, userState);
+            } else {
+                renderUnscrambleQuestion(container, q, userState);
+            }
+        }
+
+        /* ==========================================================================
+           6. MULTIPLE CHOICE RENDERER
+           ========================================================================== */
+        function renderMultipleChoiceQuestion(container, q, userState) {
+            const letterLabels = ['A', 'B', 'C', 'D', 'E'];
+
+            let html = `
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2 text-xs font-bold text-slate-400 uppercase tracking-wider">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        <span>Questão Objetiva (${q.topic})</span>
+                    </div>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-800 leading-relaxed">${q.question}</h3>
+
+                    <div class="space-y-2.5 pt-2">
+            `;
+
+            q.options.forEach((opt, i) => {
+                const label = letterLabels[i];
+                let btnStyle = "bg-slate-50 border-slate-200 hover:bg-slate-100 text-slate-700";
+
+                if (userState.selected === opt) {
+                    btnStyle = "bg-blue-50 border-salesiano-blue text-salesiano-blueDark font-bold ring-1 ring-salesiano-blue";
+                }
+
+                if (userState.checked) {
+                    if (opt === q.correct) {
+                        btnStyle = "bg-emerald-50 border-emerald-500 text-emerald-900 font-bold ring-1 ring-emerald-500";
+                    } else if (userState.selected === opt && !userState.isCorrect) {
+                        btnStyle = "bg-red-50 border-salesiano-red text-salesiano-redDark font-bold ring-1 ring-salesiano-red";
+                    }
+                }
+
+                html += `
+                    <button onclick="selectMCOption('${q.id}', '${opt.replace(/'/g, "\\'")}')" 
+                            ${userState.checked ? 'disabled' : ''} 
+                            class="w-full text-left p-3.5 rounded-xl border ${btnStyle} transition flex items-center space-x-3 text-sm">
+                        <span class="w-7 h-7 rounded-lg bg-white border border-slate-300 flex items-center justify-center font-bold text-xs shrink-0">${label}</span>
+                        <span class="flex-grow">${opt}</span>
+                        ${userState.checked && opt === q.correct ? '<i class="fa-solid fa-circle-check text-emerald-600 text-lg"></i>' : ''}
+                        ${userState.checked && userState.selected === opt && !userState.isCorrect ? '<i class="fa-solid fa-circle-xmark text-salesiano-red text-lg"></i>' : ''}
+                    </button>
+                `;
+            });
+
+            html += `</div></div>`;
+
+            // Action & Feedback Box
+            html += renderFeedbackAndCheckControls(q, userState);
+            container.innerHTML = html;
+        }
+
+        function selectMCOption(qId, selectedOpt) {
+            if (userAnswers[qId] && userAnswers[qId].checked) return;
+            userAnswers[qId] = {
+                selected: selectedOpt,
+                checked: false,
+                isCorrect: false
+            };
+            loadQuestion(currentQuestionIndex);
+        }
+
+        /* ==========================================================================
+           7. UNSCRAMBLE QUESTION RENDERER
+           ========================================================================== */
+        function renderUnscrambleQuestion(container, q, userState) {
+            if (!unscrambleSelectedWords[q.id]) {
+                unscrambleSelectedWords[q.id] = [];
+            }
+
+            const currentSelected = unscrambleSelectedWords[q.id];
+            // Available words left to click
+            const availableWords = q.shuffledWords.filter((w, idx) => {
+                // Count how many times this word has been selected vs original occurrences
+                const countInSelected = currentSelected.filter(sw => sw === w).length;
+                const countInShuffledBeforeIdx = q.shuffledWords.slice(0, idx + 1).filter(sw => sw === w).length;
+                return countInShuffledBeforeIdx > countInSelected;
+            });
+
+            let html = `
+                <div class="space-y-5">
+                    <div class="flex items-center space-x-2 text-xs font-bold text-slate-400 uppercase tracking-wider">
+                        <i class="fa-solid fa-arrow-down-a-z"></i>
+                        <span>Unscramble the words (${q.topic})</span>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-700">Clique nas palavras abaixo na ordem correta para montar a frase:</p>
+
+                    <!-- Construct Area -->
+                    <div class="min-h-[70px] bg-slate-50 border-2 border-dashed border-slate-300 rounded-2xl p-3 flex flex-wrap gap-2 items-center">
+            `;
+
+            if (currentSelected.length === 0) {
+                html += `<span class="text-xs text-slate-400 font-medium italic pl-2">Sua frase aparecerá aqui conforme você clica nas palavras...</span>`;
+            } else {
+                currentSelected.forEach((word, index) => {
+                    html += `
+                        <button onclick="removeWordFromUnscramble('${q.id}', ${index})" 
+                                ${userState.checked ? 'disabled' : ''}
+                                class="word-chip bg-salesiano-blue text-white font-bold px-3 py-1.5 rounded-lg text-sm shadow-sm flex items-center space-x-1.5">
+                            <span>${word}</span>
+                            <i class="fa-solid fa-xmark text-xs opacity-75"></i>
+                        </button>
+                    `;
+                });
+            }
+
+            html += `</div>`;
+
+            // Bank of available words
+            if (!userState.checked) {
+                html += `
+                    <div class="pt-2">
+                        <p class="text-xs font-bold uppercase text-slate-400 mb-2">Banco de Palavras:</p>
+                        <div class="flex flex-wrap gap-2">
+                `;
+
+                q.shuffledWords.forEach((word, idx) => {
+                    // Check if instance of word is available
+                    const countInSelected = currentSelected.filter(sw => sw === word).length;
+                    const countInShuffledBeforeIdx = q.shuffledWords.slice(0, idx + 1).filter(sw => sw === word).length;
+                    const isUsed = countInShuffledBeforeIdx <= countInSelected;
+
+                    html += `
+                        <button onclick="addWordToUnscramble('${q.id}', '${word.replace(/'/g, "\\'")}')" 
+                                ${isUsed ? 'disabled' : ''}
+                                class="word-chip ${isUsed ? 'bg-slate-100 text-slate-300 border-slate-200 cursor-not-allowed' : 'bg-white hover:bg-slate-100 text-slate-800 border-slate-300 shadow-sm'} border px-3.5 py-2 rounded-xl font-bold text-sm">
+                            ${word}
+                        </button>
+                    `;
+                });
+
+                html += `
+                        </div>
+                        <div class="flex justify-end pt-2">
+                            <button onclick="clearUnscramble('${q.id}')" class="text-xs font-bold text-slate-500 hover:text-salesiano-red underline">
+                                Limpar seleção
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+
+            html += `</div>`;
+
+            // Action & Feedback Box
+            html += renderFeedbackAndCheckControls(q, userState);
+            container.innerHTML = html;
+        }
+
+        function addWordToUnscramble(qId, word) {
+            if (userAnswers[qId] && userAnswers[qId].checked) return;
+            if (!unscrambleSelectedWords[qId]) unscrambleSelectedWords[qId] = [];
+            unscrambleSelectedWords[qId].push(word);
+            loadQuestion(currentQuestionIndex);
+        }
+
+        function removeWordFromUnscramble(qId, index) {
+            if (userAnswers[qId] && userAnswers[qId].checked) return;
+            if (unscrambleSelectedWords[qId]) {
+                unscrambleSelectedWords[qId].splice(index, 1);
+            }
+            loadQuestion(currentQuestionIndex);
+        }
+
+        function clearUnscramble(qId) {
+            if (userAnswers[qId] && userAnswers[qId].checked) return;
+            unscrambleSelectedWords[qId] = [];
+            loadQuestion(currentQuestionIndex);
+        }
+
+        /* ==========================================================================
+           8. CHECK ANSWER & FEEDBACK GENERATOR
+           ========================================================================== */
+        function renderFeedbackAndCheckControls(q, userState) {
+            let html = `<div class="pt-6 border-t border-slate-100 space-y-4">`;
+
+            if (!userState.checked) {
+                html += `
+                    <button onclick="checkCurrentAnswer()" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-8 py-3.5 rounded-xl shadow transition text-sm flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Check Answer</span>
+                    </button>
+                `;
+            } else {
+                // Feedback message
+                if (userState.isCorrect) {
+                    html += `
+                        <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-2xl space-y-1">
+                            <div class="flex items-center space-x-2 text-emerald-800 font-bold text-base">
+                                <i class="fa-solid fa-circle-check text-xl"></i>
+                                <span>Excelente! Resposta Correta!</span>
+                            </div>
+                            <p class="text-xs text-emerald-700">${q.explanation}</p>
+                        </div>
+                    `;
+                } else {
+                    let correctDisplay = q.type === 'mc' ? q.correct : q.targetSentence;
+                    html += `
+                        <div class="bg-red-50 border-l-4 border-salesiano-red p-4 rounded-r-2xl space-y-2">
+                            <div class="flex items-center space-x-2 text-salesiano-redDark font-bold text-base">
+                                <i class="fa-solid fa-circle-xmark text-xl"></i>
+                                <span>Resposta Incorreta</span>
+                            </div>
+                            <div class="text-xs text-slate-700 font-semibold">
+                                Resposta correta: <span class="font-bold text-emerald-700 underline">${correctDisplay}</span>
+                            </div>
+                            <p class="text-xs text-slate-600 bg-white/60 p-2.5 rounded-lg border border-red-100 mt-1">
+                                <b>Justificativa Gramatical:</b> ${q.explanation}
+                            </p>
+                        </div>
+                    `;
+                }
+            }
+
+            html += `</div>`;
+            return html;
+        }
+
+        function checkCurrentAnswer() {
+            const q = processedQuestions[currentQuestionIndex];
+            let isCorrect = false;
+            let userProvided = null;
+
+            if (q.type === 'mc') {
+                const state = userAnswers[q.id];
+                if (!state || !state.selected) {
+                    alert("Por favor, selecione uma opção antes de checar!");
+                    return;
+                }
+                userProvided = state.selected;
+                isCorrect = (userProvided === q.correct);
+            } else if (q.type === 'unscramble') {
+                const selectedWords = unscrambleSelectedWords[q.id] || [];
+                if (selectedWords.length === 0) {
+                    alert("Por favor, monte a frase selecionando as palavras antes de checar!");
+                    return;
+                }
+                userProvided = selectedWords.join(' ');
+                
+                // Compare normalized strings (ignore case and trailing punctuation)
+                const normUser = userProvided.toLowerCase().replace(/[.,?!]/g, '').trim();
+                const normTarget = q.targetSentence.toLowerCase().replace(/[.,?!]/g, '').trim();
+                
+                isCorrect = (normUser === normTarget);
+            }
+
+            userAnswers[q.id] = {
+                selected: userProvided,
+                checked: true,
+                isCorrect: isCorrect
+            };
+
+            loadQuestion(currentQuestionIndex);
+        }
+
+        function navigateQuestion(step) {
+            const nextIdx = currentQuestionIndex + step;
+            if (nextIdx >= 0 && nextIdx < processedQuestions.length) {
+                loadQuestion(nextIdx);
+            } else if (nextIdx >= processedQuestions.length) {
+                confirmFinishQuiz();
+            }
+        }
+
+        function confirmFinishQuiz() {
+            const answeredCount = Object.keys(userAnswers).filter(id => userAnswers[id].checked).length;
+            if (answeredCount < 40) {
+                const confirmChoice = confirm(`Você respondeu e verificou ${answeredCount} de 40 questões. Deseja realmente finalizar a avaliação agora?`);
+                if (!confirmChoice) return;
+            }
+            generateReport();
+        }
+
+        /* ==========================================================================
+           9. PERFORMANCE REPORT & PEDAGOGICAL DIAGNOSIS GENERATOR
+           ========================================================================== */
+        function generateReport() {
+            let scoreTotal = 0;
+            let scoreAff = 0; // out of 10
+            let scoreNeg = 0; // out of 15
+            let scoreInt = 0; // out of 15
+
+            processedQuestions.forEach(q => {
+                const ans = userAnswers[q.id];
+                if (ans && ans.checked && ans.isCorrect) {
+                    scoreTotal++;
+                    if (q.block === 'aff') scoreAff++;
+                    if (q.block === 'neg') scoreNeg++;
+                    if (q.block === 'int') scoreInt++;
+                }
+            });
+
+            const pctTotal = Math.round((scoreTotal / 40) * 100);
+            const pctAff = Math.round((scoreAff / 10) * 100);
+            const pctNeg = Math.round((scoreNeg / 15) * 100);
+            const pctInt = Math.round((scoreInt / 15) * 100);
+
+            // Set Header elements
+            document.getElementById('report-student-name').innerText = `Parabéns, ${studentName}!`;
+            document.getElementById('report-score-text').innerText = `${scoreTotal} / 40`;
+            document.getElementById('report-percentage-text').innerText = `${pctTotal}%`;
+
+            // Set progress bars
+            document.getElementById('score-aff-text').innerText = `${scoreAff}/10 (${pctAff}%)`;
+            document.getElementById('bar-aff').style.width = `${pctAff}%`;
+
+            document.getElementById('score-neg-text').innerText = `${scoreNeg}/15 (${pctNeg}%)`;
+            document.getElementById('bar-neg').style.width = `${pctNeg}%`;
+
+            document.getElementById('score-int-text').innerText = `${scoreInt}/15 (${pctInt}%)`;
+            document.getElementById('bar-int').style.width = `${pctInt}%`;
+
+            // Pedagogical Diagnosis List
+            const diagList = document.getElementById('pedagogical-feedback-list');
+            diagList.innerHTML = '';
+
+            const feedbackItems = [];
+
+            if (pctAff < 70) {
+                feedbackItems.push({
+                    title: 'Reforçar Frases Afirmativas (Simple Past & Past Continuous)',
+                    text: 'Atenção às regras de verbos regulares (-ed, -ied, CVC) e irregulares comuns. No Past Continuous, lembre-se da concordância: WAS para I/He/She/It e WERE para You/We/They.',
+                    type: 'warning'
+                });
+            } else {
+                feedbackItems.push({
+                    title: 'Ótimo domínio em Frases Afirmativas!',
+                    text: 'Você demonstrou excelente compreensão da estrutura afirmativa no passado.',
+                    type: 'success'
+                });
+            }
+
+            if (pctNeg < 70) {
+                feedbackItems.push({
+                    title: 'Atenção Especial para Frases Negativas',
+                    text: 'Lembre-se da regra de ouro do Simple Past: usou "didn\'t", o verbo volta para o infinitivo sem -ed! (Ex: "She didn\'t LIKE", e não "didn\'t liked"). No Past Continuous, use wasn\'t ou weren\'t.',
+                    type: 'warning'
+                });
+            } else {
+                feedbackItems.push({
+                    title: 'Excelente desempenho em Frases Negativas!',
+                    text: 'Você aplicou corretamente o auxiliar "didn\'t" e as formas "wasn\'t/weren\'t".',
+                    type: 'success'
+                });
+            }
+
+            if (pctInt < 70) {
+                feedbackItems.push({
+                    title: 'Revisar Estruturas Interrogativas',
+                    text: 'Nas perguntas de Simple Past, inicie sempre com DID + Sujeito + Verbo base. No Past Continuous, inverta a posição colocando WAS/WERE no início da frase.',
+                    type: 'warning'
+                });
+            } else {
+                feedbackItems.push({
+                    title: 'Incrível domínio em Frases Interrogativas!',
+                    text: 'Sua montagem e escolha de perguntas em inglês foi bastante precisa.',
+                    type: 'success'
+                });
+            }
+
+            // Render feedback items
+            feedbackItems.forEach(item => {
+                const card = document.createElement('div');
+                if (item.type === 'warning') {
+                    card.className = "bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl space-y-1";
+                    card.innerHTML = `
+                        <p class="font-bold text-amber-900 text-sm flex items-center space-x-2">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <span>${item.title}</span>
+                        </p>
+                        <p class="text-xs text-amber-800 leading-relaxed">${item.text}</p>
+                    `;
+                } else {
+                    card.className = "bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-xl space-y-1";
+                    card.innerHTML = `
+                        <p class="font-bold text-emerald-900 text-sm flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>${item.title}</span>
+                        </p>
+                        <p class="text-xs text-emerald-800 leading-relaxed">${item.text}</p>
+                    `;
+                }
+                diagList.appendChild(card);
+            });
+
+            goToScreen('screen-report');
+        }
+
+        function restartQuiz() {
+            userAnswers = {};
+            unscrambleSelectedWords = {};
+            initQuestions();
+            goToScreen('screen-review');
+        }
+    </script>
+</body>
+</html>
